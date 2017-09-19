@@ -1,0 +1,18 @@
+{
+    "name":"SPON-ADB-Message-Remover",
+    "version":"0.0.0.1",
+    "manifest_version":2,
+    "description":" Removes the \"adblocker detected\" message periodically shown by spiegel.de",
+	"web_accessible_resources" : ["/remover.js"],
+    "content_scripts": [
+      {
+        "matches": ["http://www.spiegel.de/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "permissions":[
+        "activeTab"
+        ],
+	"homepage_url": "https://github.com/GerhardK90/SPON-ADB-Message-Remover"
+}
