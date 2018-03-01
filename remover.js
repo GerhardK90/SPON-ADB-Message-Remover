@@ -8,6 +8,34 @@
 
 (function() {
     'use strict';
+    function remPersistentMessage(){
+        var removed1 = false;
+        var removed2 = false;
+        var divs = document.getElementsByTagName("div");
+        for (var i = 0; i < divs.length; i++){
+
+    
+            if (divs[i].className != null){
+                if(divs[i].className.includes("sp_veil")){
+                     divs[i].parentNode.removeChild(divs[i]);
+                     removed1 = true;
+                }
+            }
+            if (divs[i].getAttribute('id') != null){
+                if( divs[i].getAttribute( 'id' ).includes("sp_message_id")){
+                    divs[i].parentNode.removeChild(divs[i]);
+                    removed2 = true;
+                }
+            }
+        }
+        if(!removed1 || !removed2)
+            setTimeout(remPersistentMessage, 100);
+
+        document.body.parentNode.style.overflowY = "scroll";
+        document.body.style.overflowY = "scroll";
+
+    }
+
     function remAdWarning(){
         var removed = false; 
 
@@ -25,6 +53,9 @@
         if(!removed)
             setTimeout(remAdWarning, 500);
     }
- remAdWarning();
+
+    remPersistentMessage();
+    remAdWarning();
+
     
 })();
