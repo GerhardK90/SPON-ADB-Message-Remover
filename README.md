@@ -4,8 +4,15 @@ The SPON Adblocker Message Remover is a chrome plugin which removes the "adblock
 # 
 [![N|Solid](https://github.com/GerhardK90/SPON-ADB-Message-Remover/blob/master/ADB-Message.PNG?raw=true)]()
 
+#Changes
+- Now also removes the premanent AdBlocker message. 
+- Also removes the message in SPON Videos
+
+
 # Who should use this plugin?
 If you want to keep on using your adblocker and you are annoyed by the message displayed above, this plugin is made for you!
+
+
 
 # How to install the plugin?
 - download this repository as zip / or clone it
