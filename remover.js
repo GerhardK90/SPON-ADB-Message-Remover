@@ -17,13 +17,13 @@
     
             if (divs[i].className != null){
                 if(divs[i].className.includes("sp_veil")){
-                     divs[i].parentNode.removeChild(divs[i]);
+                     divs[i].style.display = "none";
                      removed1 = true;
                 }
             }
             if (divs[i].getAttribute('id') != null){
-                if( divs[i].getAttribute( 'id' ).includes("sp_message_id")){
-                    divs[i].parentNode.removeChild(divs[i]);
+                if( divs[i].getAttribute( 'id' ).includes("sp_message")){
+                    divs[i].style.display = "none";
                     removed2 = true;
                 }
             }
@@ -31,8 +31,8 @@
         if(!removed1 || !removed2)
             setTimeout(remPersistentMessage, 100);
 
-        document.body.parentNode.style.overflowY = "scroll";
-        document.body.style.overflowY = "scroll";
+        document.getElementsByClassName("dt-www")[0].style.overflowY = "scroll";
+        
 
     }
 
