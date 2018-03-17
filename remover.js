@@ -2,7 +2,7 @@
  SPON Adblocker Message Removal 
  Removes the "adblocker detected" message periodically shown by spiegel.de 
  19-09-2017
- (c) 2017 - Gerhard Klasse - info@Gerhard-Klassen.de 
+ (c) 2017 - Gerhard Klassen - info@Gerhard-Klassen.de 
  https://github.com/GerhardK90/SPON-ADB-Message-Remover
 */
 
